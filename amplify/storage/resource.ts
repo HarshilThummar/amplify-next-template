@@ -9,7 +9,7 @@ export const storage = defineStorage({
     ],
     'private_bucket/*': [
       allow.authenticated.to(['read']),
-      allow.entity('identity').to(['read'])
+      allow.entity('identity').to(['read', 'write'])
     ],
     //'private/{entity_id}/*': [
     //  allow.entity('identity').to(['read', 'write', 'delete'])
